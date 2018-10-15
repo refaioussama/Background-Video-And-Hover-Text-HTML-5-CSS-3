@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.container .overlay {
+    width: 100%;
+    height: 100vw;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container video {
+    width: 100%;
+    height: 100%;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Mali', cursive;
+    background: linear-gradient(to right, #e62e3d, #ec7e18, #eba308);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: .60;
+    transition: .3s ease-in-out;
+}
+.text h1:hover {
+    background: linear-gradient(to right, #eba308, #ec7e18, #e62e3d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 62px;
+    cursor: pointer;
+    border-bottom: 3px solid #e62e3d;
+    border-radius: 10px;
+}
